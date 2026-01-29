@@ -1,0 +1,17 @@
+const fs = require ("fs");
+const path = require("path");
+const todo_file = path.join(__dirname,"todo.json");
+console.log(todo_file);
+
+function readtodo() {
+const data = fs.readFileSync(todo_file,"utf-8");
+return JSON.parse(data);
+}
+
+function writetodo(todo) {
+  fs.writeFileSync(todo_file,JSON.stringify(todo));
+}
+
+writetodo({
+    task: "hello",
+})
