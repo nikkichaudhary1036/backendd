@@ -1,0 +1,21 @@
+{
+  "_id": ObjectId("507f1f77bcf86cd799439011"),
+  "createdAt": ISODate("2024-01-01")
+}
+
+{ "name":"Abhi" }
+{ "name":"Rahul", "age":22 }
+
+{
+  "user":"Abhi",
+  "orders": [
+    { "item":"Laptop" }
+  ]
+}
+
+users= [
+  { name:"Aman", age:22 },
+  { name:"Ravi", age:25 },
+  { name:"Neha", age:21 },
+  { name:"Sita", age:24 }
+]
